@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="3d-container">
-        <div id="label"> </div>
+        <div id="label">Object 01: Old Wood</div>
     </div>
     <!-- Include Three.js and OrbitControls via unpkg -->
     <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
@@ -51,7 +51,7 @@
             scene.add(ambientLight);
 
             const loader = new THREE.GLTFLoader();
-            loader.load('https://skd242.github.io/driftwood/', function (gltf) {
+            loader.load('https://skd242.github.io/driftwood/Test01.glb', function (gltf) {
                 scene.add(gltf.scene);
                 console.log('Model loaded successfully');
             }, undefined, function (error) {
